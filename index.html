@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Football</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="#">Sports</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=" navbar-toggler-icon "></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Lionel_Messi">Wiki</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Videos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.youtube.com/watch?v=It4YOYzEaVY">His Top 10 goals</a>
+              <a class="dropdown-item" href="https://www.youtube.com/watch?v=R_CkrhqGIWM">His Presentation  At PSG</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.youtube.com/watch?v=RG5V4_QqTnE">His Farewell At barca</a>
+            </div>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="index2.html">
+          <button class="first" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+          <div id="id01" class="modal">
+            
+            <form class="modal-content animate"  method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+               
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b style="color: aqua;">Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b style="color: aqua;">Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label style="color: aqua;">
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#280e46">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"> <a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          
+          var modal = document.getElementById('id01');
+          
+         
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+              
+          }
+          </script>
+        </button>
+      </a>
+      </div>
+    </nav>
+  
+     <!--Heading Section-->
+     <section class="Football py-4 ">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-lg-8">
+             <div class="blog-post">
+             <img class="img-fluid" src="p1.jpg" alt="Messi's Performance has been underwhelming at psg">
+             <div class="blog-post-badges">
+               <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>24/2/2022</a>
+             </div>
+             <div class="blog-content">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-fluid rounded-circle py-1" src="Author.jpeg" alt="Author of this post" >
+                   
+                  </div>
+                  <div class="col-sm-9">
+                    <h1>Leo Messi</h1>
+                    <p class="doc">Lionel Messi was awarded the 2021 Ballon d’Or on Monday, with voters determining his efforts in leading Argentina to the Copa America title, as well as carrying a poor Barcelona side to a Copa Del Rey crown, warranted a record seventh Ballon d’Or.
+
+                      The decision has led to a predictable wave of criticism over what many see as an egregious snub of Bayern Munich and Poland striker Robert Lewandowski, who scored the most goals in Europe in 2021, and won another Bundesliga title along with a Club World Cup with Bayern.Meanwhile, Bayern Munich footballer Lewandowski finished 33 points behind Messi’s 613 points in the 2021 Ballon d’Or standings, while Chelsea’s Jorginho finished third with 460 points to his credit. One of the highly anticipated contenders Real Madrid’s Karim Benzema finished fourth with 239 points, followed by N’Golo Kante with 186 points. Having returned to Manchester United in 2021, Ronaldo finished 57 points ahead of Liverpool Mohamed Salah at 121. Whereas, Manchester City’s Kevin De Bruyne, Paris Saint-Germain(PSG) duo Kylian Mbappe, and Gianluigi Donnarumma finished eighth, ninth, and tenth with  73, 58, and 36 points respectively.</p>
+                  </div>
+
+                </div>
+             </div>
+
+           </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-post ">
+              <img class="img-fluid" src="psg.jfif" alt="Messi's Performance has been underwhelming at psg">
+              
+              <div class="blog-content shadow">
+                 <div class="row">
+                   <div class="col-sm-3">
+                     
+                   </div>
+                   <div class="col-sm-9">
+                     <h3></h3>
+                     
+                   </div>
+ 
+                 </div>
+              </div>
+ 
+            </div>
+            <div class="blog-post ">
+              <div class="row"><a href="https://www.youtube.com/watch?v=pynFPylTyjE"><img class="img-fluid" src="p2.jpeg" alt="Messi's Performance has been underwhelming at psg">
+              </a>
+                <div class="blog-content shadow">
+                  <div class="row">
+                    <div class="col-md-3">
+                      
+                    </div>
+                    <div class="col-md-9">
+                      <h3></h3>
+                    </div>
+  
+                  </div>
+               </div>
+
+              </div>
+              
+              
+  
+            </div>
+          </div>
+          
+          </div>
+      </div>
+      </section>
+
+    <!--Main Blog Section-->
+    <section class="Blog_type">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+           <article class="Blog-type shadow-on">
+             <div class="row py-4">
+            <div class="col-sm-3">
+              <img class="img-fluid" alt="His glory days during barcelona" src="Atalayar_Leo Messi Barcelona_0.jpg">
+ 
+             </div>
+             <div class="col-sm-9">
+               <h3>How has it been Going for the Barcelona Legend</h3>
+               <p>Earlier in November, PSG forward Lionel Messi was awarded football's most prestigious honour, his record-extending seventh Ballon d'Or. The Argentine legend managed to garner more votes than Bayern Munich striker Robert Lewandowski and Chelsea midfielder Jorginho who finished second and third respectively. However, there were some outspoken critics who claimed that Messi did not deserve to win the Ballon d'Or and fans also called 2021 his 'worst' year till now. However, Messi hit back at the haters by uploading a collage video of images from 2021 with all his achievements and a separate image featuring the titles he won in 2021.
+
+                The awards in the image uploaded to Messi's Instagram handle included his seventh Ballon d'Or, the Copa Del Rey title he won with Barcelona before departing for PSG and also the Copa America, his very first international trophy. Messi also mentioned that he hopes COVID-19 ends soon and wishes his fans the best for 2022. Lionel Messi wrote on his Instagram account: "I can only give thanks for everything that I had to live in this 2021.</p>
+               <div class="Badges">
+                 <a href="https://fbref.com/en/players/d70ce98e/Lionel-Messi">His Stats</a>
+               </div>
+                 
+               </div>
+             </div>
+           </article>
+          
+             </div>
+             
+             <aside class="col-md-4">
+               <!--Social Links-->
+               <div class=" social-links row text-center ">
+                 <div class="col-sm-4 py-4">
+                  <a class=" Social-links "href="https://www.instagram.com/amaan._syed/"  >
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    
+                  </a>
+                 </div>
+                 <div class="col-sm-4 py-4">
+                  <a class=" Social-links ">
+                    <i class="fa fa-twitter" aria-hidden="true"></i >
+                    
+                    
+                  </a>
+                 </div>
+                 <div class="col-sm-4 py-4">
+                  <a class=" Social-links r">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    
+                  </a>
+                 </div>
+               </div>
+               <h4 class="aside-heading mt-4">Trophies He has won over the years</h4>
+               <article class="row">
+                 <div class="col-sm-6">
+                   <img class="img-fluid" src="ballon_d.jpg" alt="The awards he has won">
+
+
+                 </div>
+                 <div class="col-sm-6 mt-0">
+                   <p>Lionel Messi was announced as the winner of football's most prestigious award, the Ballon d'Or 2021. It was a record-extending seventh award for the Argentine sensation as he pipped the likes of Bayern Munich star striker Robert Lewandowski and Real Madrid's Karim Benzema </p>
+                   <a href="https://www.republicworld.com/sports-news/cricket-news/lionel-messis-7th-ballon-dor-win-panned-by-football-players-absolutely-not-deserved.html#:~:text=On%20Monday%20night%20in%20Paris,and%20Real%20Madrid's%20Karim%20Benzema.">Link to The Article</a>
+                   
+                </div>
+               </article>
+               
+               
+            
+ 
+             </aside>
+ 
+          </div>
+
+      </div>
+      
+         
+      
+    </section>
+
+   <!--Footer Section-->
+   <footer class="footer">
+     <div class="row">
+       <div class="col-md-6 text-left">
+         <a class="footer-logo" href="https://www.goal.com/en-in/lists/ballon-dor-2021-power-rankings/1l03egk461k3a1em4lb6gh8mhu#cs8fc2bc488680b6c9">        Ballon d'or 2021 Standings</a>
+         <div class="flex-container">
+          <div>1. Lionel Messi</div>
+          <div>2. Robert</div>
+          <div>3. Farbi</div>  
+        </div>
+         
+
+
+       </div>
+
+     </div>
+   </footer>
+
+      
+
+</body>
+</html>
